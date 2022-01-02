@@ -38,4 +38,4 @@ if __name__ == '__main__':
     except yadisk.exceptions.PathExistsError:
         pass
 
-    y.upload(f'{arch_name}.zip', posixpath.join('python_backups', f'{arch_name}.zip'), overwrite=True)
+    y.upload(f'{arch_name}.zip', posixpath.join('python_backups', f'{arch_name}.zip'), overwrite=True, timeout=(6000.0, 9000))
